@@ -21,8 +21,8 @@ local layout = Layout(
 	{
 		position = '50%',
 		size = {
-			width = '35%',
-			height = '60%',
+			width = '45%',
+			height = '80%',
 		},
 	},
 	Layout.Box({
