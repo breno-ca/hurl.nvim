@@ -22,7 +22,7 @@ local layout = Layout(
 		position = '50%',
 		size = {
 			width = '45%',
-			height = '80%',
+			height = '100%',
 		},
 	},
 	Layout.Box({
