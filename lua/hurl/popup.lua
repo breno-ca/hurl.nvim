@@ -7,20 +7,23 @@ local utils = require('hurl.utils')
 local M = {}
 local popups = {
 	bottom = Popup({
-		border = 'single',
 		enter = true,
+		border = 'rounded',
 		buf_options = { filetype = 'json' },
 	}),
 	top = Popup({
-		border = { style = 'rounded' },
+		border = 'rounded',
 		buf_options = { filetype = 'bash' },
 	}),
 }
 
 local layout = Layout(
 	{
-		position = _HURL_GLOBAL_CONFIG.popup_position,
-		size = _HURL_GLOBAL_CONFIG.popup_size,
+		position = '50%',
+		size = {
+			width = '35%',
+			height = '60%',
+		},
 	},
 	Layout.Box({
 		Layout.Box(popups.top, { size = '35%' }),
